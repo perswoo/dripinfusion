@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4007D0A9-ADDE-48CE-A124-5DFDC7B21E5D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63EBC27A-7888-4747-9115-34760D1F2640"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DropHelper/FluidVolumeInputViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "FluidVolumeInputViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "63EBC27A-7888-4747-9115-34760D1F2640 - 393000125e81d299"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropHelper.FluidVolumeInputViewController.userDefaults.getter : __C.NSUserDefaults"
+                  moduleName = "DropHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oichiitamago/Desktop/Practice/DropHelper/DropHelper/FluidVolumeInputViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "63EBC27A-7888-4747-9115-34760D1F2640 - 5dd9469035be1562"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropHelper.FluidVolumeInputViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DropHelper.FluidVolumeInputViewController"
+                  moduleName = "DropHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oichiitamago/Desktop/Practice/DropHelper/DropHelper/FluidVolumeInputViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "63EBC27A-7888-4747-9115-34760D1F2640 - 39c8a24d7ba8793f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropHelper.FluidVolumeInputViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DropHelper.FluidVolumeInputViewController&gt;"
+                  moduleName = "DropHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oichiitamago/Desktop/Practice/DropHelper/DropHelper/FluidVolumeInputViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF4826B3-FD31-43EA-9DCA-AA6C76645132"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DropHelper WatchKit Extension/_MyConstants.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "EF4826B3-FD31-43EA-9DCA-AA6C76645132 - f73c826ccff87df0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for LEAST_INPUT_DROP_TIME"
+                  moduleName = "DropHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oichiitamago/Desktop/Practice/DropHelper/DropHelper%20WatchKit%20Extension/_MyConstants.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "EF4826B3-FD31-43EA-9DCA-AA6C76645132 - 11b4429cc19f047e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DropHelper.LEAST_INPUT_DROP_TIME.unsafeMutableAddressor : Swift.Int"
+                  moduleName = "DropHelper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oichiitamago/Desktop/Practice/DropHelper/DropHelper%20WatchKit%20Extension/_MyConstants.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C01403A-A29C-4098-9962-EB7A4D031626"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DropHelper WatchKit Extension/_MyConstants.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
