@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DropHelper_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" height="29" alignment="left" title="Infusion Set" id="mce-j9-LxA">
+                            <connections>
+                                <segue destination="xEn-zB-JsQ" kind="push" identifier="infusionSet" id="glu-rs-vgF"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="29" alignment="left" title="FluidVolume" id="eTb-pU-gNe">
+                            <connections>
+                                <segue destination="ZWh-mb-z13" kind="push" id="2H6-CR-2Ml"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="29" alignment="left" title="Time" id="bRF-iQ-MYu">
+                            <connections>
+                                <segue destination="aHD-4j-xco" kind="push" id="7YO-ce-KYx"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="29" alignment="left" title="FlowRate" id="Igg-Kd-3jx">
+                            <connections>
+                                <segue destination="NHD-p5-V2c" kind="push" id="AG9-kt-oRu"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="29" alignment="left" title="OK" id="UzH-b8-6mG">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="okButton" destination="AgC-eL-Hgc" id="fRo-cR-S7I"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="0.10000000000000001" alignment="left" id="POe-p2-pBr"/>
+                        <button width="1" alignment="left" title="設定" id="VGC-jJ-j8b">
+                            <connections>
+                                <segue destination="erd-Es-afb" kind="push" id="A1c-gY-3eO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="OKButton" destination="UzH-b8-6mG" id="r5Q-B1-lHU"/>
+                        <outlet property="flowRateSetButton" destination="Igg-Kd-3jx" id="vsG-X5-EC3"/>
+                        <outlet property="fluidVolumeSetButton" destination="eTb-pU-gNe" id="9qt-KI-5ma"/>
+                        <outlet property="infusionSetButton" destination="mce-j9-LxA" id="bZE-S5-jB6"/>
+                        <outlet property="timeSetButton" destination="bRF-iQ-MYu" id="jiu-rJ-nAg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-21" y="397"/>
+        </scene>
+        <!--Setting View-->
+        <scene sceneID="7C9-GC-dJR">
+            <objects>
+                <controller id="erd-Es-afb" customClass="SettingView" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="図の配置" id="2yT-Zy-PDQ"/>
+                        <group width="1" alignment="left" id="LB4-EI-i5n">
+                            <items>
+                                <button width="0.5" alignment="left" title="左" id="TIj-PW-lTa">
+                                    <connections>
+                                        <action selector="imageAlignmentLeftSET" destination="erd-Es-afb" id="vMs-8F-RID"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="右" id="ryS-Gt-lkf">
+                                    <connections>
+                                        <action selector="imageAlignmentRightSET" destination="erd-Es-afb" id="d6o-qY-cbb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="imageAlignmentLeftButton" destination="TIj-PW-lTa" id="FOA-cD-Jn4"/>
+                        <outlet property="imageAlignmentRightButton" destination="ryS-Gt-lkf" id="PDY-oj-b9D"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-21" y="1020"/>
+        </scene>
+        <!--Infusion SetWK Interface Controller-->
+        <scene sceneID="1Ny-Xa-YS4">
+            <objects>
+                <controller id="xEn-zB-JsQ" customClass="InfusionSetWKInterfaceController" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="32" alignment="left" title="20 滴/mL" id="PF7-Tm-NWS">
+                            <connections>
+                                <action selector="infusionSet_20" destination="xEn-zB-JsQ" id="CxA-si-Jn4"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="32" alignment="left" title="60 滴/mL" id="hYF-7h-qKX">
+                            <connections>
+                                <action selector="infusionSet_60" destination="xEn-zB-JsQ" id="ILo-hd-QnL"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="32" alignment="left" title="15 滴/mL" id="1oQ-hx-MSl">
+                            <connections>
+                                <action selector="infusionSet_15" destination="xEn-zB-JsQ" id="xps-4i-ltb"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="32" alignment="left" title="10 滴/mL" id="BSy-9k-tQu">
+                            <connections>
+                                <action selector="infusionSet_10" destination="xEn-zB-JsQ" id="0W1-hT-S5k"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="infusionSet_10_Button" destination="BSy-9k-tQu" id="fdJ-hk-Avh"/>
+                        <outlet property="infusionSet_15_Button" destination="1oQ-hx-MSl" id="vIy-6g-tLi"/>
+                        <outlet property="infusionSet_20_Button" destination="PF7-Tm-NWS" id="wgN-pL-Uug"/>
+                        <outlet property="infusionSet_60_Button" destination="hYF-7h-qKX" id="ofl-Jn-eOx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="-25"/>
+        </scene>
+        <!--Fluid Volume Set View-->
+        <scene sceneID="jog-Nb-fRU">
+            <objects>
+                <controller id="ZWh-mb-z13" customClass="FluidVolumeSetView" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <textField width="1" height="0.10000000000000001" alignment="left" text="FluidVolume" id="L2M-iY-tm8"/>
+                        <group width="1" height="0.22" alignment="left" id="cdk-eN-75C">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="1" id="Lp1-Mf-Q3E">
+                                    <connections>
+                                        <action selector="KeyButton_1" destination="ZWh-mb-z13" id="SAA-Tm-Dlx"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="2" id="LoR-R7-X0R">
+                                    <connections>
+                                        <action selector="KeyButton_2" destination="ZWh-mb-z13" id="KVt-yb-8EE"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="3" id="gXV-Gm-krd">
+                                    <connections>
+                                        <action selector="KeyButton_3" destination="ZWh-mb-z13" id="9Kv-Hb-Nka"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="wB4-pb-06o">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="4" id="3A3-A3-4ol">
+                                    <connections>
+                                        <action selector="KeyButton_4" destination="ZWh-mb-z13" id="7vW-g4-Fj7"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="5" id="Vsd-Te-Tpw">
+                                    <connections>
+                                        <action selector="KeyButton_5" destination="ZWh-mb-z13" id="78d-T5-QHD"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="6" id="78r-b1-XBD">
+                                    <connections>
+                                        <action selector="KeyButton_6" destination="ZWh-mb-z13" id="feM-1Z-QyM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="bWO-79-fVu">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="7" id="hcq-2s-wug">
+                                    <connections>
+                                        <action selector="KeyButton_7" destination="ZWh-mb-z13" id="jUa-QP-Od6"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="8" id="C1u-n1-WcU">
+                                    <connections>
+                                        <action selector="KeyButton_8" destination="ZWh-mb-z13" id="nbk-zh-uBC"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="9" id="0rB-L4-NKN">
+                                    <connections>
+                                        <action selector="KeyButton_9" destination="ZWh-mb-z13" id="acp-fs-44Y"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="XzR-H3-5bF">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="OK" id="lkt-9l-XLG">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <connections>
+                                        <action selector="KeyButton_OK" destination="ZWh-mb-z13" id="hed-1V-BO4"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="0" id="pYz-sc-gC1">
+                                    <connections>
+                                        <action selector="KeyButton_0" destination="ZWh-mb-z13" id="ueb-xD-vBw"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="←" id="EK5-Kk-3Qk">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="Color"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="KeyButton_Delete" destination="ZWh-mb-z13" id="9G3-Av-5yR"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="valueSetView" destination="L2M-iY-tm8" id="xKQ-PT-R80"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="264"/>
+        </scene>
+        <!--Time Set View-->
+        <scene sceneID="GdW-Pk-2qE">
+            <objects>
+                <controller id="aHD-4j-xco" customClass="TimeSetView" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <textField width="1" height="0.10000000000000001" alignment="left" text="Time" id="Q6f-4h-Yph"/>
+                        <group width="1" height="0.22" alignment="left" id="9TW-Xq-YMc">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="1" id="v3t-4R-FrN">
+                                    <connections>
+                                        <action selector="KeyButton_1" destination="aHD-4j-xco" id="OkI-uZ-GHy"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="2" id="avU-tU-xAL">
+                                    <connections>
+                                        <action selector="KeyButton_2" destination="aHD-4j-xco" id="KoO-n9-jvg"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="3" id="BQg-gU-aLn">
+                                    <connections>
+                                        <action selector="KeyButton_3" destination="aHD-4j-xco" id="XAL-I6-OeP"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="puy-WO-niP">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="4" id="jep-go-X7t">
+                                    <connections>
+                                        <action selector="KeyButton_4" destination="aHD-4j-xco" id="FBZ-b6-kta"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="5" id="lFW-SA-Dsg">
+                                    <connections>
+                                        <action selector="KeyButton_5" destination="aHD-4j-xco" id="T6D-XE-gAz"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="6" id="wGz-GF-u4o">
+                                    <connections>
+                                        <action selector="KeyButton_6" destination="aHD-4j-xco" id="aY7-ah-Z9G"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="iAh-fN-UVr">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="7" id="GoD-lL-AZb">
+                                    <connections>
+                                        <action selector="KeyButton_7" destination="aHD-4j-xco" id="CM9-Ac-IQI"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="8" id="VHh-tH-3eJ">
+                                    <connections>
+                                        <action selector="KeyButton_8" destination="aHD-4j-xco" id="1uT-vm-Tus"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="9" id="1ve-3X-GAU">
+                                    <connections>
+                                        <action selector="KeyButton_9" destination="aHD-4j-xco" id="znU-df-zyF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="u9E-V6-UwP">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="OK" id="knX-I5-hST">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <connections>
+                                        <action selector="KeyButton_OK" destination="aHD-4j-xco" id="dCb-1d-W9r"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="0" id="h7a-Nq-Evz">
+                                    <connections>
+                                        <action selector="KeyButton_0" destination="aHD-4j-xco" id="VUN-oY-yAp"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="←" id="0ye-sE-cd2">
+                                    <color key="backgroundColor" name="Color"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="KeyButton_Delete" destination="aHD-4j-xco" id="xD9-ig-4jt"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="valueSetView" destination="Q6f-4h-Yph" id="gtG-cJ-I7X"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="559"/>
+        </scene>
+        <!--Flow Rate Set View-->
+        <scene sceneID="Isz-gl-wgU">
+            <objects>
+                <controller id="NHD-p5-V2c" customClass="FlowRateSetView" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <textField width="1" height="0.10000000000000001" alignment="left" text="FlowRate" id="xOS-PA-he8"/>
+                        <group width="1" height="0.22" alignment="left" id="Z0y-vF-e0t">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="1" id="ZQf-sN-sD8">
+                                    <connections>
+                                        <action selector="KeyButton_1" destination="NHD-p5-V2c" id="PoL-BU-NLS"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="2" id="w8V-TV-QcI">
+                                    <connections>
+                                        <action selector="KeyButton_2" destination="NHD-p5-V2c" id="ufi-gg-ahT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="3" id="vmJ-Qq-cyr">
+                                    <connections>
+                                        <action selector="KeyButton_3" destination="NHD-p5-V2c" id="5ah-Fx-9qK"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="LVu-V9-IEO">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="4" id="AGM-F6-skg">
+                                    <connections>
+                                        <action selector="KeyButton_4" destination="NHD-p5-V2c" id="b6Q-kT-scf"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="5" id="gBa-DQ-jpz">
+                                    <connections>
+                                        <action selector="KeyButton_5" destination="NHD-p5-V2c" id="UAL-WM-aTM"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="6" id="FHM-wn-iG6">
+                                    <connections>
+                                        <action selector="KeyButton_6" destination="NHD-p5-V2c" id="S0A-rr-VWh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="fWT-PX-C2w">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="7" id="8pr-fB-791">
+                                    <connections>
+                                        <action selector="KeyButton_7" destination="NHD-p5-V2c" id="OGR-UA-5z1"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="8" id="b5D-Re-MoR">
+                                    <connections>
+                                        <action selector="KeyButton_8" destination="NHD-p5-V2c" id="6cD-Tn-Urz"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="9" id="6km-fp-iOp">
+                                    <connections>
+                                        <action selector="KeyButton_9" destination="NHD-p5-V2c" id="vvE-Gg-L0q"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.22" alignment="left" id="nSs-bH-ZIp">
+                            <items>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="OK" id="F7s-42-Jmv">
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <connections>
+                                        <action selector="KeyButton_OK" destination="NHD-p5-V2c" id="217-NL-Qca"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="0" id="Jbj-Ze-Hcc">
+                                    <connections>
+                                        <action selector="KeyButton_0" destination="NHD-p5-V2c" id="WR6-dG-gKV"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33333333333300003" height="1" alignment="left" title="←" id="FoR-Ym-MYl">
+                                    <color key="backgroundColor" name="Color"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
+                                    <connections>
+                                        <action selector="KeyButton_Delete" destination="NHD-p5-V2c" id="Z71-yc-jxv"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="valueSetView" destination="xOS-PA-he8" id="AGP-GC-zbB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="852"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="50U-xR-k2I">
+            <objects>
+                <notificationController id="iod-ES-GvT">
+                    <items>
+                        <label alignment="left" text="アプリを開いてください。" id="d1P-cw-cDp"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="dj9-fk-ykq"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="d1P-cw-cDp" id="9gm-3H-oB1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-21" y="1580"/>
+        </scene>
+        <!--DropNotificationViewRight-->
+        <scene sceneID="1UF-EF-7Ri">
+            <objects>
+                <controller identifier="DropNotificationViewRight" id="uuI-Da-ZUT" customClass="DropNotificationView" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="overlap" id="xeh-2r-hlK">
+                            <items>
+                                <button width="1" height="1" alignment="left" id="zex-I4-o3y">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="StartDropButton" destination="uuI-Da-ZUT" id="enk-po-DRJ"/>
+                                    </connections>
+                                </button>
+                                <group width="1" height="1" alignment="left" id="rGg-xB-KCJ">
+                                    <items>
+                                        <group width="0.5" height="1" alignment="left" layout="vertical" id="Cql-41-hmj">
+                                            <items>
+                                                <label width="1" height="0.20000000000000001" alignment="left" text="点滴セット" textAlignment="center" minimumScaleFactor="0.5" id="zOB-G0-Ehs">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                                <label width="1" height="0.20000000000000001" alignment="left" text="量" textAlignment="center" id="9P0-MK-i1c">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                                <label width="1" height="0.20000000000000001" alignment="left" text="時間" textAlignment="center" id="BFQ-fm-thK">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                                <label width="1" height="28" alignment="left" text="-- mL/hr" textAlignment="center" id="2jG-zZ-q1q">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                                <label width="1" height="0.20000000000000001" alignment="left" text="-- gtts/min" textAlignment="center" id="ACe-xd-Epc">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                        </group>
+                                        <group width="0.40000000000000002" height="1" alignment="left" id="gSM-Tt-uDz">
+                                            <items>
+                                                <imageView width="0.75" height="1" alignment="right" verticalAlignment="center" image="InflusionDrop0" id="2a5-oP-3NT"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ProgressImage" destination="2a5-oP-3NT" id="Aha-cw-ywd"/>
+                        <outlet property="dropSecPerOneDropLabel" destination="ACe-xd-Epc" id="5LP-uA-wuW"/>
+                        <outlet property="flowRateLabel" destination="2jG-zZ-q1q" id="rIv-Ji-ULT"/>
+                        <outlet property="fluidVolumeLabel" destination="9P0-MK-i1c" id="qgH-Ly-S8T"/>
+                        <outlet property="infusionSetLabel" destination="zOB-G0-Ehs" id="G53-nu-X8J"/>
+                        <outlet property="timeLabel" destination="BFQ-fm-thK" id="e1h-bG-kiO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="1131"/>
+        </scene>
+        <!--DropNotificationViewLeft-->
+        <scene sceneID="7ub-nt-4um">
+            <objects>
+                <controller identifier="DropNotificationViewLeft" id="TPA-jX-Lin" customClass="DropNotificationView" customModule="DropHelper_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" id="TLx-d4-45y">
+                            <items>
+                                <group width="0.40000000000000002" height="1" alignment="left" id="YXS-C4-uZ5">
+                                    <items>
+                                        <imageView width="0.80000000000000004" height="1" alignment="center" verticalAlignment="center" image="InflusionDrop0" id="5cx-ZQ-9an"/>
+                                    </items>
+                                </group>
+                                <group width="0.59999999999999998" height="1" alignment="left" layout="vertical" id="Dmk-ec-LDz">
+                                    <items>
+                                        <label width="1" height="0.20000000000000001" alignment="left" text="点滴セット" textAlignment="center" minimumScaleFactor="0.5" id="dli-gN-Jf1">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label width="1" height="0.20000000000000001" alignment="left" text="量" textAlignment="center" id="sqO-3m-jmN">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label width="1" height="0.20000000000000001" alignment="left" text="時間" textAlignment="center" id="lel-L9-FLP">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label width="1" height="28" alignment="left" text="-- mL/hr" textAlignment="center" id="yWd-LL-Sta">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label width="1" height="0.20000000000000001" alignment="left" text="-- gtts/min" textAlignment="center" id="REh-EC-7tP">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ProgressImage" destination="5cx-ZQ-9an" id="8dq-2j-S8n"/>
+                        <outlet property="dropSecPerOneDropLabel" destination="REh-EC-7tP" id="NRc-WL-Viu"/>
+                        <outlet property="flowRateLabel" destination="yWd-LL-Sta" id="0VA-M2-o4i"/>
+                        <outlet property="fluidVolumeLabel" destination="sqO-3m-jmN" id="UNh-m3-PQ6"/>
+                        <outlet property="infusionSetLabel" destination="dli-gN-Jf1" id="zTN-iL-HBl"/>
+                        <outlet property="timeLabel" destination="lel-L9-FLP" id="eEA-jZ-D7u"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="304" y="1455"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="AccentColor"/>
+    <resources>
+        <image name="InflusionDrop0" width="244" height="812"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color">
+            <color red="1" green="0.17599999904632568" blue="0.33299997448921204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
