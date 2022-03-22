@@ -223,5 +223,7 @@ let KEY_RECOMMEND = "recommendKey"
 let KEY_APP_VERSION = "appVersionKey"
 let KEY_MY_APP = "myAppKey"
 
+let KEY_INFUSION_SET_CURRENT = "InfusionSetCurrent" // 最近選択したセグメント情報の保管
+
 
 

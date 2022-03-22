@@ -12,7 +12,9 @@ import AVFoundation
 
 import WatchConnectivity
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, WCSessionDelegate {
+import GoogleMobileAds
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, WCSessionDelegate, GADBannerViewDelegate {
 
     @IBOutlet weak var form_DropCountPerMin: UITextField!
     @IBOutlet weak var form_DropSecPerCount: UITextField!
@@ -22,6 +24,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var DropSettingTableView: UITableView!
     
     @IBOutlet weak var DropTimingImage: UIImageView!
+    
+    // @IBOutlet weak var bannerView: GADBannerView!
     
     var audioPlayer:AVAudioPlayer!
     
@@ -145,6 +149,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        /* bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"  //Test Ad
+        bannerView.adUnitID = "ca-app-pub-8058786761550310/6004614497"   //本番 Ad
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        */
+        
         DropSettingTableView.register(UINib(nibName: "MainDropTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         // UITableView をスクロールさせない
         DropSettingTableView.isScrollEnabled = false
@@ -218,22 +228,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidAppear(true)
         
         
-        // オプション点滴SETのセグメントを追加する
+        
         if (userDefaults.integer(forKey: KEY_OPTION_INFUSION_SET) == 0){
-            // オプション点滴SETが0の場合、表示しないようにする。
+            // オプション点滴SETが0の場合、オプションのセグメントを表示しないようにする。
             segmentedControl_InfusionSet.removeSegment(at: 2, animated: true)
-            segmentedControl_InfusionSet.selectedSegmentIndex = 0
             
+            // 現在選択されているインデックスが左から三番目の場合、一番目に戻す
+            if ( userDefaults.integer(forKey: KEY_INFUSION_SET_CURRENT) == 2) {
+                segmentedControl_InfusionSet.selectedSegmentIndex = 0
+            }
         }
         else{
+            // オプション点滴SETのオプションのセグメントを追加する
             let newSegmentTitle = userDefaults.string(forKey: KEY_OPTION_INFUSION_SET)! + UNT_DROP_INFUSION_SET
             segmentedControl_InfusionSet.insertSegment(withTitle: newSegmentTitle, at: 2, animated: true)
+            
+            segmentedControl_InfusionSet.selectedSegmentIndex = userDefaults.integer(forKey: KEY_INFUSION_SET_CURRENT)
         }
         // 過去のオプション点滴SETのセグメント削除する
         if (segmentedControl_InfusionSet.numberOfSegments > 3){
             print(segmentedControl_InfusionSet.numberOfSegments)
             segmentedControl_InfusionSet.removeSegment(at: 3, animated: true)
         }
+        
         
         
         
@@ -538,12 +555,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         switch selectedIndex {
         case 0:
             infusionSet = INFUSIONSET_20
+            userDefaults.set(0, forKey: KEY_INFUSION_SET_CURRENT)
         case 1:
             infusionSet = INFUSIONSET_60
+            userDefaults.set(1, forKey: KEY_INFUSION_SET_CURRENT)
         case 2:
             infusionSet = userDefaults.integer(forKey: KEY_OPTION_INFUSION_SET)
+            userDefaults.set(2, forKey: KEY_INFUSION_SET_CURRENT)
         default:
             infusionSet = INFUSIONSET_20
+            userDefaults.set(0, forKey: KEY_INFUSION_SET_CURRENT)
         }
         
         // userDefaultsを取得し、変数に代入する
