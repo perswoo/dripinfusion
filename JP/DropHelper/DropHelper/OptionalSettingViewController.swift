@@ -69,7 +69,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
     let SWTAG_MY_APP_KEY = 10
     
     
-    private let CHEVRON_UI = 0 // シェブロン（Disclosure Indicator）での遷移の場合に使用
+    let CHEVRON_UI = 0 // シェブロン ">"（Disclosure Indicator）での遷移の場合に使用
     let SWITCH_UI = 1 // スイッチ切り替えの場合に使用
     
     // UserDefaults のインスタンス
@@ -112,7 +112,6 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
         
          // UITableViewの空セルのseparatorを消す
         tableView.tableFooterView = UIView(frame: .zero)
-        
         
         
     }
@@ -200,7 +199,6 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
     
     /// セルの個数を指定（UITableViewDataSource required）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return allSetting[section].count
     }
     
@@ -350,6 +348,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
                 performSegue(withIdentifier: "OptionInfusionSet", sender: allSetting[indexPath.section][indexPath.row].title)
                 break
             case ROW_SOUND_SELECT:
+                // 音源選択画面へ移動
                 performSegue(withIdentifier: "soundSelect", sender: allSetting[indexPath.section][indexPath.row].title)
                 break
             case ROW_VIBRATION:
@@ -381,6 +380,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
             case ROW_APP_VERSION_KEY:
                 break
             case ROW_MY_APP_KEY:
+                // 免責事項画面へ移動
                 performSegue(withIdentifier: "AboutThisApp", sender: allSetting[indexPath.section][indexPath.row].title)
                 break
             default:
@@ -399,7 +399,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
     @objc func fundlSwitch(_ sender: UISwitch) {
         
         /*
-         sender.tagにはスイッチのセルの位置が入る(Int)
+         sender.tagには、テーブル生成時にセルの位置を入れている(Int)
          sender.isOnにはスイッチのon/off情報が入る(Bool)
          下のprint文はセル内のラベルの内容とスイッチのTrue/False
          */
@@ -410,16 +410,16 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
         case SWTAG_SOUND_SELECT:
             break
         case SWTAG_VIBRATION: // "点滴のバイブレーション"
-            userDefaults.set(sender.isOn, forKey: allSetting[0][2].keyID)
+            userDefaults.set(sender.isOn, forKey: allSetting[SECTION_CUL_TIMING][ROW_VIBRATION].keyID)
             break
         case SWTAG_SHAKE_RESET: // "シェイクでリセット"
-            userDefaults.set(sender.isOn, forKey: allSetting[0][3].keyID)
+            userDefaults.set(sender.isOn, forKey: allSetting[SECTION_CUL_TIMING][ROW_SHAKE_RESET].keyID)
             break
         case SWTAG_SYNC_WATCH: // "使用中はリセットしない"
-            userDefaults.set(sender.isOn, forKey: allSetting[0][4].keyID)
+            userDefaults.set(sender.isOn, forKey: allSetting[SECTION_CUL_TIMING][SWTAG_SYNC_WATCH].keyID)
             break
         case SWTAG_FLOW_RATE: // "使用中はリセットしない"
-            userDefaults.set(sender.isOn, forKey: allSetting[0][5].keyID)
+            userDefaults.set(sender.isOn, forKey: allSetting[SECTION_CUL_TIMING][SWTAG_FLOW_RATE].keyID)
             break
         case SWTAG_REVIEW_KEY:
             break

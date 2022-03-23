@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,6 +44,13 @@
 		C3C713C326948E9F0007BB26 /* OptionalSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C713AF26948E9F0007BB26 /* OptionalSettingViewController.swift */; };
 		C3C713C426948F5A0007BB26 /* MainDropTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C713B426948E9F0007BB26 /* MainDropTableViewCell.xib */; };
 		C3C713C526948F5F0007BB26 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C713AD26948E9F0007BB26 /* MainTableViewCell.xib */; };
+		C3F5297627EA7EC1009BC032 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5296F27EA7EC0009BC032 /* nanopb.xcframework */; };
+		C3F5297727EA7EC1009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297027EA7EC0009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		C3F5297827EA7EC1009BC032 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297127EA7EC0009BC032 /* GoogleMobileAds.xcframework */; };
+		C3F5297927EA7EC1009BC032 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297227EA7EC0009BC032 /* GoogleAppMeasurement.xcframework */; };
+		C3F5297A27EA7EC1009BC032 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297327EA7EC0009BC032 /* PromisesObjC.xcframework */; };
+		C3F5297B27EA7EC1009BC032 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297427EA7EC0009BC032 /* GoogleUtilities.xcframework */; };
+		C3F5297C27EA7EC1009BC032 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297527EA7EC0009BC032 /* UserMessagingPlatform.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +136,13 @@
 		C3C713B526948E9F0007BB26 /* FlowRateInputValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRateInputValueViewController.swift; sourceTree = "<group>"; };
 		C3C713B626948E9F0007BB26 /* InitTimerValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitTimerValueViewController.swift; sourceTree = "<group>"; };
 		C3C713B726948E9F0007BB26 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C3F5296F27EA7EC0009BC032 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = Frameworks/nanopb.xcframework; sourceTree = "<group>"; };
+		C3F5297027EA7EC0009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = Frameworks/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		C3F5297127EA7EC0009BC032 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Frameworks/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		C3F5297227EA7EC0009BC032 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = Frameworks/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		C3F5297327EA7EC0009BC032 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = Frameworks/PromisesObjC.xcframework; sourceTree = "<group>"; };
+		C3F5297427EA7EC0009BC032 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = Frameworks/GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		C3F5297527EA7EC0009BC032 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = Frameworks/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F5297627EA7EC1009BC032 /* nanopb.xcframework in Frameworks */,
+				C3F5297C27EA7EC1009BC032 /* UserMessagingPlatform.xcframework in Frameworks */,
+				C3F5297827EA7EC1009BC032 /* GoogleMobileAds.xcframework in Frameworks */,
+				C3F5297927EA7EC1009BC032 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				C3F5297727EA7EC1009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				C3F5297A27EA7EC1009BC032 /* PromisesObjC.xcframework in Frameworks */,
+				C3F5297B27EA7EC1009BC032 /* GoogleUtilities.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +177,7 @@
 				C3C7132A2693685F0007BB26 /* DropHelper WatchKit App */,
 				C3C713392693685F0007BB26 /* DropHelper WatchKit Extension */,
 				C3C713132693685D0007BB26 /* Products */,
+				C3F5292E27EA7E1F009BC032 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +247,20 @@
 				C3C7135026936A360007BB26 /* _MyConstants.swift */,
 			);
 			path = "DropHelper WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C3F5292E27EA7E1F009BC032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5297227EA7EC0009BC032 /* GoogleAppMeasurement.xcframework */,
+				C3F5297027EA7EC0009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				C3F5297127EA7EC0009BC032 /* GoogleMobileAds.xcframework */,
+				C3F5297427EA7EC0009BC032 /* GoogleUtilities.xcframework */,
+				C3F5296F27EA7EC0009BC032 /* nanopb.xcframework */,
+				C3F5297327EA7EC0009BC032 /* PromisesObjC.xcframework */,
+				C3F5297527EA7EC0009BC032 /* UserMessagingPlatform.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,7 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
 				INFOPLIST_FILE = "DropHelper WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,6 +601,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -580,7 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
 				INFOPLIST_FILE = "DropHelper WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -588,6 +625,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -607,7 +645,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
 				IBSC_MODULE = DropHelper_WatchKit_Extension;
 				INFOPLIST_FILE = "DropHelper WatchKit App/Info.plist";
@@ -616,6 +654,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,7 +675,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
 				IBSC_MODULE = DropHelper_WatchKit_Extension;
 				INFOPLIST_FILE = "DropHelper WatchKit App/Info.plist";
@@ -645,6 +684,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,7 +703,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
 				INFOPLIST_FILE = DropHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -671,6 +711,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -685,7 +726,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
 				INFOPLIST_FILE = DropHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -693,6 +734,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

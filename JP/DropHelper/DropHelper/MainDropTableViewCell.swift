@@ -24,4 +24,11 @@ class MainDropTableViewCell: UITableViewCell {
         //
     }
     
+    override func prepareForReuse() {
+       super.prepareForReuse()
+       // TableViewのセルを再利用される時に以前の値が入らないようにクリアする
+        self.title?.text = ""
+        self.value?.text = ""
+    }
+    
 }
