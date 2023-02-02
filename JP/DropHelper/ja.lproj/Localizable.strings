@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  DropHelper
+
+  Created by おいちいたまご on 2022-03-24.
+  
+*/
+
+
+"Unit_InfusionSet" ="滴/㎖";
+
+/* IOS Main画面 */
+"Drip_Unit_Hour"=" 時間 ";
+"Drip_Unit_Min"=" 分";
+"Drip_History"="履歴";
+
+
+/* IOS 設定画面 */
+"SettingTitle_Drip" = "点滴計算";
+"SettingTitle_OtherSets" = "他のセット";
+"SettingTitle_DripSound" = "点滴の音";
+"SettingTitle_DripVibration" = "点滴のバイブレーション";
+"SettingTitle_ShakeReset" = "シェイクでリセット";
+"SettingTitle_SyncWithWatchApp" = "WatchAppと設定値の同期（iOSのみ）";
+"SettingTitle_EnableEditingRate" = "「1時間あたりの滴下量」の入力";
+"SettingTitle_INFO" = "情報";
+"SettingTitle_Review" = "レビュー";
+"SettingTitle_Contact" = "問い合わせ";
+"SettingTitle_RecommendFriends" = "友達におすすめ";
+"SettingTitle_AppVersion" = "App Verision";
+"SettingTitle_AboutThisApp" = "このアプリについて";
+"SettingText_Mail" = "メール";
+
+
+/* Watch OS */
+"WatchOS_Setting"="設定";

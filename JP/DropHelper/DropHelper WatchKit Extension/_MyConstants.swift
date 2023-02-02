@@ -55,7 +55,7 @@ let STR_W_DROP_PROGRESS_DROP_IMAGE4 = "InflusionDrop96"
 let STR_W_DROP_PROGRESS_DROP_IMAGE5 = "InflusionDrop99"
 
 
-let UNT_W_DROP_INFUSION_SET = " 滴/㎖"
+let UNT_W_DROP_INFUSION_SET = NSLocalizedString("Unit_InfusionSet", comment: "")
 let UNT_W_DROP_FLUID_VOLUME = " ㎖"
 let UNT_W_DROP_FLOW_RATE = " ㎖/hr"
 let UNT_W_DROP_COUNT_PER_MIN = " gtts/min"
@@ -109,7 +109,7 @@ var LeastInputItem = CUL_DROP_NONE
 let INFUSIONSET_20 = 20
 let INFUSIONSET_60 = 60
 
-let UNT_DROP_INFUSION_SET = " 滴/㎖"
+let UNT_DROP_INFUSION_SET = NSLocalizedString("Unit_InfusionSet", comment: "")
 let UNT_DROP_FLUID_VOLUME = " ㎖"
 let UNT_DROP_FLOW_RATE = " ㎖/hr"
 let UNT_DROP_COUNT_PER_MIN = " gtts/min"

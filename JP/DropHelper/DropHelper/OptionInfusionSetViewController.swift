@@ -61,7 +61,7 @@ class OptionInfusionSetViewController: UIViewController, UIPickerViewDelegate, U
         switch component {
                 case 0:
                     let min = UILabel()
-                    min.text = "他のセット"  //minではなく自分の表示したいLabel名を入る。
+                    min.text = NSLocalizedString("SettingTitle_OtherSets", comment: "")  //minではなく自分の表示したいLabel名を入る。
                     optionInfusionSet.setPickerLabels(labels: [0: min]) //1のところはcaseと同じ数字を入れれば大丈夫です。
                     return ""
                 

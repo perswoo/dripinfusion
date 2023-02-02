@@ -86,9 +86,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             userDefaults.set(false, forKey: KEY_NOTIFICATION) // 通知機能で使用する
             userDefaults.set(0, forKey: KEY_TIMER_DISPLAY_SEQUENCE)
             userDefaults.set("App Store", forKey: KEY_REVIEW)
-            userDefaults.set("メール", forKey: KEY_CONTACT)
+            userDefaults.set(NSLocalizedString("SettingText_Mail", comment: ""), forKey: KEY_CONTACT)
             userDefaults.set("", forKey: KEY_RECOMMEND)
-            userDefaults.set("1.0 (21)", forKey: KEY_APP_VERSION)
+            let AppVersion = ((Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!) + " (22)"
+            userDefaults.set(AppVersion, forKey: KEY_APP_VERSION)
             userDefaults.set("", forKey: KEY_MY_APP)
             
         }
@@ -150,7 +151,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view.
         
         //bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"  //Test Ad
-        bannerView.adUnitID = "ca-app-pub-8058786761550310/6004614497"   //本番 Ad
+        //bannerView.adUnitID = "ca-app-pub-8058786761550310/6004614497"   //本番 Ad 1st
+        bannerView.adUnitID = "ca-app-pub-8058786761550310/8432834265"   //本番 Ad 2nd
+        
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
@@ -470,7 +473,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let cell_value_Hour = userDefaults.string(forKey: KEY_DROP_TIME_HOUR)
             let cell_value_Min = userDefaults.string(forKey: KEY_DROP_TIME_MIN)
             
-            cell.value.text = cell_value_Hour! + " 時間" + cell_value_Min! + "分"
+            cell.value.text = cell_value_Hour! + NSLocalizedString("Drip_Unit_Hour", comment: "") + cell_value_Min! + NSLocalizedString("Drip_Unit_Min", comment: "")
             
             // シェブロン（"＞"マーク）をUIに追加
             cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator

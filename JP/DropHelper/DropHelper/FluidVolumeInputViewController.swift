@@ -20,7 +20,7 @@ class FluidVolumeInputViewController: UIViewController, UITableViewDelegate, UIT
     
     let userDefaults = UserDefaults.standard
     
-    private let sections = ["履歴"]
+    private let sections = [NSLocalizedString("Drip_History", comment: "") ]
     var fluidVolumeInputList = [FluidVolumeInputList]()
     
     
@@ -312,13 +312,13 @@ class FluidVolumeInputViewController: UIViewController, UITableViewDelegate, UIT
     
     @IBAction func dataListEditButton(_ sender: Any) {
         
-        if (dataListEditButton.title == "編集"){
-            dataListEditButton.title = "完了"
+        if (dataListEditButton.title == NSLocalizedString("Drip_EditStart", comment: "") ){
+            dataListEditButton.title = NSLocalizedString("Drip_EditDone", comment: "")
             super.setEditing(true, animated: true)
             fluidVolumeInputTableView.setEditing(true, animated: true)
         }
         else{
-            dataListEditButton.title = "編集"
+            dataListEditButton.title = NSLocalizedString("Drip_EditStart", comment: "")
             super.setEditing(false, animated: true)
             fluidVolumeInputTableView.setEditing(false, animated: true)
         }

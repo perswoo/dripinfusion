@@ -28,7 +28,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
         
     }
     
-    private let sections = ["点滴計算","情報"]
+    private let sections = [NSLocalizedString("SettingTitle_Drip", comment: ""),NSLocalizedString("SettingTitle_INFO", comment: "")]
     var allSetting : [[Setting]] = []
     
     // indexPath.sectionで取得できる番号の順番
@@ -77,20 +77,21 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
     
     
     func dataSET(){
+        
         let section0Setting : [Setting] = [
-            Setting(title: "他のセット", mode: CHEVRON_UI, keyID: KEY_OPTION_INFUSION_SET, indexPathToSWTag: SWTAG_OPTION_INFUSION_SET),
-            Setting(title: "点滴の音", mode: CHEVRON_UI, keyID: KEY_SOUND_SELECT, indexPathToSWTag: SWTAG_SOUND_SELECT),
-            Setting(title: "点滴のバイブレーション", mode: SWITCH_UI, keyID: KEY_VIBRATION, indexPathToSWTag: SWTAG_VIBRATION),
-            Setting(title: "シェイクでリセット", mode: SWITCH_UI, keyID: KEY_SHAKE_RESET, indexPathToSWTag: SWTAG_SHAKE_RESET),
-            Setting(title: "WatchAppと設定値の同期(iOSのみ)", mode: SWITCH_UI, keyID: KEY_SYNC_WATCH, indexPathToSWTag: SWTAG_SYNC_WATCH),
-            Setting(title: "「1時間あたりの滴下量」の入力", mode: SWITCH_UI, keyID: KEY_SETTING_FLOW_RATE, indexPathToSWTag: SWTAG_FLOW_RATE)
+            Setting(title: NSLocalizedString("SettingTitle_OtherSets", comment: ""), mode: CHEVRON_UI, keyID: KEY_OPTION_INFUSION_SET, indexPathToSWTag: SWTAG_OPTION_INFUSION_SET),
+            Setting(title: NSLocalizedString("SettingTitle_DripSound", comment: ""), mode: CHEVRON_UI, keyID: KEY_SOUND_SELECT, indexPathToSWTag: SWTAG_SOUND_SELECT),
+            Setting(title: NSLocalizedString("SettingTitle_DripVibration", comment: ""), mode: SWITCH_UI, keyID: KEY_VIBRATION, indexPathToSWTag: SWTAG_VIBRATION),
+            Setting(title: NSLocalizedString("SettingTitle_ShakeReset", comment: ""), mode: SWITCH_UI, keyID: KEY_SHAKE_RESET, indexPathToSWTag: SWTAG_SHAKE_RESET),
+            Setting(title: NSLocalizedString("SettingTitle_SyncWithWatchApp", comment: ""), mode: SWITCH_UI, keyID: KEY_SYNC_WATCH, indexPathToSWTag: SWTAG_SYNC_WATCH),
+            Setting(title: NSLocalizedString("SettingTitle_EnableEditingRate", comment: ""), mode: SWITCH_UI, keyID: KEY_SETTING_FLOW_RATE, indexPathToSWTag: SWTAG_FLOW_RATE)
         ]
         let section1Setting : [Setting] = [
-            Setting(title: "レビュー", mode: CHEVRON_UI, keyID: KEY_REVIEW, indexPathToSWTag: SWTAG_REVIEW_KEY),
-            Setting(title: "問い合わせ", mode: CHEVRON_UI, keyID: KEY_CONTACT, indexPathToSWTag: SWTAG_CONTACT_KEY),
-            Setting(title: "友達におすすめ", mode: CHEVRON_UI, keyID: KEY_RECOMMEND, indexPathToSWTag: SWTAG_RECOMMEND_KEY),
-            Setting(title: "App Version", mode: CHEVRON_UI, keyID: KEY_APP_VERSION, indexPathToSWTag: SWTAG_APP_VERSION_KEY),
-            Setting(title: "このアプリについて", mode: CHEVRON_UI, keyID: KEY_MY_APP, indexPathToSWTag: SWTAG_MY_APP_KEY)
+            Setting(title: NSLocalizedString("SettingTitle_Review", comment: ""), mode: CHEVRON_UI, keyID: KEY_REVIEW, indexPathToSWTag: SWTAG_REVIEW_KEY),
+            Setting(title: NSLocalizedString("SettingTitle_Contact", comment: ""), mode: CHEVRON_UI, keyID: KEY_CONTACT, indexPathToSWTag: SWTAG_CONTACT_KEY),
+            Setting(title: NSLocalizedString("SettingTitle_RecommendFriends", comment: ""), mode: CHEVRON_UI, keyID: KEY_RECOMMEND, indexPathToSWTag: SWTAG_RECOMMEND_KEY),
+            Setting(title: NSLocalizedString("SettingTitle_AppVersion", comment: ""), mode: CHEVRON_UI, keyID: KEY_APP_VERSION, indexPathToSWTag: SWTAG_APP_VERSION_KEY),
+            Setting(title: NSLocalizedString("SettingTitle_AboutThisApp", comment: ""), mode: CHEVRON_UI, keyID: KEY_MY_APP, indexPathToSWTag: SWTAG_MY_APP_KEY)
         ]
         
         allSetting.append(section0Setting)
@@ -186,6 +187,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
     override func viewDidAppear(_ animated: Bool) {
         //テーブルを更新
         tableView.reloadData()
+        
     }
     // セクション合計数を指定
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -245,7 +247,7 @@ class OptionalSettingViewController: UIViewController, UITableViewDelegate, UITa
                     value = "-"
                 }
                 else{
-                    value = value! + " 滴/mL"
+                    value = value! + NSLocalizedString("Unit_InfusionSet", comment: "")
                 }
                 
                 cell.value.text = value

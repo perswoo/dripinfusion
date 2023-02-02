@@ -1,0 +1,89 @@
+
+/* Class = "UILabel"; text = "hr"; ObjectID = "8B8-od-hPB"; */
+"8B8-od-hPB.text" = "時間";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "AOG-dq-Ic8"; */
+"AOG-dq-Ic8.normalTitle" = "完了";
+
+/* Class = "UILabel"; text = "This applifcation is not a thing taking responsibility in the medical care. Please use it with the responsibility of the user."; ObjectID = "C94-d5-sIm"; */
+"C94-d5-sIm.text" = "本アプリは、適量計算の目明日を提示するもので、的確な点滴量、終了時刻を保証するものではありません。\n本アプリの利用によって発生したトラブルや損失、損害等につきましては、一切の責任を負いません。";
+
+/* Class = "UILabel"; text = "Attention"; ObjectID = "Ckx-ja-LZf"; */
+"Ckx-ja-LZf.text" = "免責事項";
+
+/* Class = "UILabel"; text = "sec/gtt"; ObjectID = "EJt-lj-BVb"; */
+"EJt-lj-BVb.text" = "sec/gtt";
+
+/* Class = "UITextField"; placeholder = "- 滴下数"; ObjectID = "FTP-O5-nIO"; */
+"FTP-O5-nIO.placeholder" = "- 滴下数";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "FXD-iB-ExZ"; */
+"FXD-iB-ExZ.title" = "設定";
+
+/* Class = "UITabBarItem"; title = "Setting"; ObjectID = "JR9-In-NL0"; */
+"JR9-In-NL0.title" = "設定";
+
+/* Class = "UILabel"; text = "mL"; ObjectID = "Mxj-Sj-Ozd"; */
+"Mxj-Sj-Ozd.text" = "mL";
+
+/* Class = "UINavigationItem"; title = "Time"; ObjectID = "O1X-w3-VAM"; */
+"O1X-w3-VAM.title" = "時間";
+
+/* Class = "UINavigationItem"; title = "Drip Sound"; ObjectID = "Rhs-m9-v10"; */
+"Rhs-m9-v10.title" = "点滴の音";
+
+/* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "TCP-0k-W6o"; */
+"TCP-0k-W6o.title" = "編集";
+
+/* Class = "UINavigationItem"; title = "Volume"; ObjectID = "WfP-Dd-VaW"; */
+"WfP-Dd-VaW.title" = "液量";
+
+/* Class = "UISegmentedControl"; WlX-3t-6TF.segmentTitles[0] = "20 gtt/mL"; ObjectID = "WlX-3t-6TF"; */
+"WlX-3t-6TF.segmentTitles[0]" = "20 液/mL";
+
+/* Class = "UISegmentedControl"; WlX-3t-6TF.segmentTitles[1] = "60 gtt/mL"; ObjectID = "WlX-3t-6TF"; */
+"WlX-3t-6TF.segmentTitles[1]" = "60 液/mL";
+
+/* Class = "UINavigationItem"; title = "About this App"; ObjectID = "Xgo-V4-GT7"; */
+"Xgo-V4-GT7.title" = "このアプリについて";
+
+/* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "YOj-hO-TgT"; */
+"YOj-hO-TgT.title" = "編集";
+
+/* Class = "UILabel"; text = "min"; ObjectID = "Z05-XZ-QRf"; */
+"Z05-XZ-QRf.text" = "分";
+
+/* Class = "UIBarButtonItem"; title = "Reset"; ObjectID = "ZFU-G2-owk"; */
+"ZFU-G2-owk.title" = "リセット";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "dhz-x8-vlf"; */
+"dhz-x8-vlf.normalTitle" = "完了";
+
+/* Class = "UINavigationItem"; title = "Rate"; ObjectID = "guZ-AZ-Zli"; */
+"guZ-AZ-Zli.title" = "液量";
+
+/* Class = "UITextField"; placeholder = "- 滴下間隔"; ObjectID = "ic4-SH-T35"; */
+"ic4-SH-T35.placeholder" = "- 滴下間隔";
+
+/* Class = "UILabel"; text = "gtt/min"; ObjectID = "jD5-tq-MqB"; */
+"jD5-tq-MqB.text" = "gtt/min";
+
+/* Class = "UILabel"; text = "mL"; ObjectID = "n2r-j1-2Tc"; */
+"n2r-j1-2Tc.text" = "mL";
+
+/* Class = "UIBarButtonItem"; title = "Edit"; ObjectID = "ozO-lh-BBK"; */
+"ozO-lh-BBK.title" = "編集";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "sxq-rL-0Qv"; */
+"sxq-rL-0Qv.normalTitle" = "完了";
+
+/* Class = "UITabBarItem"; title = "Drip"; ObjectID = "thh-Pr-M2y"; */
+"thh-Pr-M2y.title" = "数値入力";
+
+/* Class = "UINavigationItem"; title = "Other sets"; ObjectID = "zP4-PA-YsQ"; */
+"zP4-PA-YsQ.title" = "他のセット";
+
+
+/*　以下、ソースコード上　*/
+
+

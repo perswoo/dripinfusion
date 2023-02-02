@@ -20,7 +20,7 @@ class DropTimeInputViewController: UIViewController, UITableViewDelegate, UITabl
     
     let userDefaults = UserDefaults.standard
     
-    private let sections = ["履歴"]
+    private let sections = [NSLocalizedString("Drip_History", comment: "") ]
     var dropTimeInputList = [DropTimeInputList]()
     
     
@@ -156,13 +156,9 @@ class DropTimeInputViewController: UIViewController, UITableViewDelegate, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MainTableViewCell
         let dropTimeInputLists = dropTimeInputList[indexPath.row]
         
-        print("List数" + dropTimeInputLists.description)
-        print("Cell Hour " + dropTimeInputLists.dropTimeHourInputValue!)
-        print("Cell Min " + dropTimeInputLists.dropTimeMinInputValue!)
-        
         //print(dropTimeInputList.dropTimeMinInputValue! + "なか")
         
-        cell.textLabel?.text = dropTimeInputLists.dropTimeHourInputValue! + " 時間 "  + dropTimeInputLists.dropTimeMinInputValue! + " 分"
+        cell.textLabel?.text = dropTimeInputLists.dropTimeHourInputValue! + NSLocalizedString("Drip_Unit_Hour", comment: "")   + dropTimeInputLists.dropTimeMinInputValue! + NSLocalizedString("Drip_Unit_Min", comment: "")
         
         if (dropTimeInputLists.dropTimeHourInputValue == userDefaults.string(forKey: KEY_DROP_TIME_HOUR) &&
                 dropTimeInputLists.dropTimeMinInputValue == userDefaults.string(forKey: KEY_DROP_TIME_MIN)){
@@ -384,13 +380,13 @@ class DropTimeInputViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBAction func dataListEditButton(_ sender: Any) {
         
-        if (dataListEditButton.title == "編集"){
-            dataListEditButton.title = "完了"
+        if (dataListEditButton.title == NSLocalizedString("Drip_EditStart", comment: "") ){
+            dataListEditButton.title = NSLocalizedString("Drip_EditDone", comment: "")
             super.setEditing(true, animated: true)
             dropTimeInputTableView.setEditing(true, animated: true)
         }
         else{
-            dataListEditButton.title = "編集"
+            dataListEditButton.title = NSLocalizedString("Drip_EditStart", comment: "")
             super.setEditing(false, animated: true)
             dropTimeInputTableView.setEditing(false, animated: true)
         }

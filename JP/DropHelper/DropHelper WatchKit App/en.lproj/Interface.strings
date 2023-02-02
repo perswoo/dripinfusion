@@ -1,0 +1,189 @@
+
+/* Class = "WKInterfaceButton"; title = "9"; ObjectID = "0rB-L4-NKN"; */
+"0rB-L4-NKN.title" = "9";
+
+/* Class = "WKInterfaceButton"; title = "←"; ObjectID = "0ye-sE-cd2"; */
+"0ye-sE-cd2.title" = "←";
+
+/* Class = "WKInterfaceButton"; title = "15 滴/mL"; ObjectID = "1oQ-hx-MSl"; */
+"1oQ-hx-MSl.title" = "15 滴/mL";
+
+/* Class = "WKInterfaceButton"; title = "9"; ObjectID = "1ve-3X-GAU"; */
+"1ve-3X-GAU.title" = "9";
+
+/* Class = "WKInterfaceLabel"; text = "-- mL/hr"; ObjectID = "2jG-zZ-q1q"; */
+"2jG-zZ-q1q.text" = "-- mL/hr";
+
+/* Class = "WKInterfaceLabel"; text = "図の配置"; ObjectID = "2yT-Zy-PDQ"; */
+"2yT-Zy-PDQ.text" = "図の配置";
+
+/* Class = "WKInterfaceButton"; title = "4"; ObjectID = "3A3-A3-4ol"; */
+"3A3-A3-4ol.title" = "4";
+
+/* Class = "WKInterfaceButton"; title = "9"; ObjectID = "6km-fp-iOp"; */
+"6km-fp-iOp.title" = "9";
+
+/* Class = "WKInterfaceButton"; title = "6"; ObjectID = "78r-b1-XBD"; */
+"78r-b1-XBD.title" = "6";
+
+/* Class = "WKInterfaceButton"; title = "7"; ObjectID = "8pr-fB-791"; */
+"8pr-fB-791.title" = "7";
+
+/* Class = "WKInterfaceLabel"; text = "量"; ObjectID = "9P0-MK-i1c"; */
+"9P0-MK-i1c.text" = "量";
+
+/* Class = "WKInterfaceLabel"; text = "-- gtts/min"; ObjectID = "ACe-xd-Epc"; */
+"ACe-xd-Epc.text" = "-- gtts/min";
+
+/* Class = "WKInterfaceButton"; title = "4"; ObjectID = "AGM-F6-skg"; */
+"AGM-F6-skg.title" = "4";
+
+/* Class = "WKInterfaceLabel"; text = "時間"; ObjectID = "BFQ-fm-thK"; */
+"BFQ-fm-thK.text" = "時間";
+
+/* Class = "WKInterfaceButton"; title = "3"; ObjectID = "BQg-gU-aLn"; */
+"BQg-gU-aLn.title" = "3";
+
+/* Class = "WKInterfaceButton"; title = "10 滴/mL"; ObjectID = "BSy-9k-tQu"; */
+"BSy-9k-tQu.title" = "10 滴/mL";
+
+/* Class = "WKInterfaceButton"; title = "8"; ObjectID = "C1u-n1-WcU"; */
+"C1u-n1-WcU.title" = "8";
+
+/* Class = "WKInterfaceButton"; title = "←"; ObjectID = "EK5-Kk-3Qk"; */
+"EK5-Kk-3Qk.title" = "←";
+
+/* Class = "WKInterfaceButton"; title = "OK"; ObjectID = "F7s-42-Jmv"; */
+"F7s-42-Jmv.title" = "OK";
+
+/* Class = "WKInterfaceButton"; title = "6"; ObjectID = "FHM-wn-iG6"; */
+"FHM-wn-iG6.title" = "6";
+
+/* Class = "WKInterfaceButton"; title = "←"; ObjectID = "FoR-Ym-MYl"; */
+"FoR-Ym-MYl.title" = "←";
+
+/* Class = "WKInterfaceButton"; title = "7"; ObjectID = "GoD-lL-AZb"; */
+"GoD-lL-AZb.title" = "7";
+
+/* Class = "WKInterfaceButton"; title = "FlowRate"; ObjectID = "Igg-Kd-3jx"; */
+"Igg-Kd-3jx.title" = "FlowRate";
+
+/* Class = "WKInterfaceButton"; title = "0"; ObjectID = "Jbj-Ze-Hcc"; */
+"Jbj-Ze-Hcc.title" = "0";
+
+/* Class = "WKInterfaceTextField"; text = "FluidVolume"; ObjectID = "L2M-iY-tm8"; */
+"L2M-iY-tm8.text" = "FluidVolume";
+
+/* Class = "WKInterfaceButton"; title = "2"; ObjectID = "LoR-R7-X0R"; */
+"LoR-R7-X0R.title" = "2";
+
+/* Class = "WKInterfaceButton"; title = "1"; ObjectID = "Lp1-Mf-Q3E"; */
+"Lp1-Mf-Q3E.title" = "1";
+
+/* Class = "WKInterfaceButton"; title = "20 滴/mL"; ObjectID = "PF7-Tm-NWS"; */
+"PF7-Tm-NWS.title" = "20 滴/mL";
+
+/* Class = "WKInterfaceTextField"; text = "Time"; ObjectID = "Q6f-4h-Yph"; */
+"Q6f-4h-Yph.text" = "Time";
+
+/* Class = "WKInterfaceLabel"; text = "-- gtts/min"; ObjectID = "REh-EC-7tP"; */
+"REh-EC-7tP.text" = "-- gtts/min";
+
+/* Class = "WKInterfaceButton"; title = "左"; ObjectID = "TIj-PW-lTa"; */
+"TIj-PW-lTa.title" = "左";
+
+/* Class = "WKInterfaceButton"; title = "OK"; ObjectID = "UzH-b8-6mG"; */
+"UzH-b8-6mG.title" = "OK";
+
+/* Class = "WKInterfaceButton"; title = "設定"; ObjectID = "VGC-jJ-j8b"; */
+"VGC-jJ-j8b.title" = "設定";
+
+/* Class = "WKInterfaceButton"; title = "8"; ObjectID = "VHh-tH-3eJ"; */
+"VHh-tH-3eJ.title" = "8";
+
+/* Class = "WKInterfaceButton"; title = "5"; ObjectID = "Vsd-Te-Tpw"; */
+"Vsd-Te-Tpw.title" = "5";
+
+/* Class = "WKInterfaceButton"; title = "1"; ObjectID = "ZQf-sN-sD8"; */
+"ZQf-sN-sD8.title" = "1";
+
+/* Class = "WKInterfaceButton"; title = "2"; ObjectID = "avU-tU-xAL"; */
+"avU-tU-xAL.title" = "2";
+
+/* Class = "WKInterfaceButton"; title = "8"; ObjectID = "b5D-Re-MoR"; */
+"b5D-Re-MoR.title" = "8";
+
+/* Class = "WKInterfaceButton"; title = "Time"; ObjectID = "bRF-iQ-MYu"; */
+"bRF-iQ-MYu.title" = "Time";
+
+/* Class = "WKInterfaceLabel"; text = "アプリを開いてください。"; ObjectID = "d1P-cw-cDp"; */
+"d1P-cw-cDp.text" = "アプリを開いてください。";
+
+/* Class = "WKInterfaceLabel"; text = "点滴セット"; ObjectID = "dli-gN-Jf1"; */
+"dli-gN-Jf1.text" = "点滴セット";
+
+/* Class = "WKInterfaceButton"; title = "FluidVolume"; ObjectID = "eTb-pU-gNe"; */
+"eTb-pU-gNe.title" = "FluidVolume";
+
+/* Class = "WKInterfaceButton"; title = "5"; ObjectID = "gBa-DQ-jpz"; */
+"gBa-DQ-jpz.title" = "5";
+
+/* Class = "WKInterfaceButton"; title = "3"; ObjectID = "gXV-Gm-krd"; */
+"gXV-Gm-krd.title" = "3";
+
+/* Class = "WKInterfaceButton"; title = "0"; ObjectID = "h7a-Nq-Evz"; */
+"h7a-Nq-Evz.title" = "0";
+
+/* Class = "WKInterfaceButton"; title = "60 滴/mL"; ObjectID = "hYF-7h-qKX"; */
+"hYF-7h-qKX.title" = "60 滴/mL";
+
+/* Class = "WKInterfaceButton"; title = "7"; ObjectID = "hcq-2s-wug"; */
+"hcq-2s-wug.title" = "7";
+
+/* Class = "WKInterfaceButton"; title = "4"; ObjectID = "jep-go-X7t"; */
+"jep-go-X7t.title" = "4";
+
+/* Class = "WKInterfaceButton"; title = "OK"; ObjectID = "knX-I5-hST"; */
+"knX-I5-hST.title" = "OK";
+
+/* Class = "WKInterfaceButton"; title = "5"; ObjectID = "lFW-SA-Dsg"; */
+"lFW-SA-Dsg.title" = "5";
+
+/* Class = "WKInterfaceLabel"; text = "時間"; ObjectID = "lel-L9-FLP"; */
+"lel-L9-FLP.text" = "時間";
+
+/* Class = "WKInterfaceButton"; title = "OK"; ObjectID = "lkt-9l-XLG"; */
+"lkt-9l-XLG.title" = "OK";
+
+/* Class = "WKInterfaceButton"; title = "Infusion Set"; ObjectID = "mce-j9-LxA"; */
+"mce-j9-LxA.title" = "Infusion Set";
+
+/* Class = "WKInterfaceButton"; title = "0"; ObjectID = "pYz-sc-gC1"; */
+"pYz-sc-gC1.title" = "0";
+
+/* Class = "WKInterfaceButton"; title = "右"; ObjectID = "ryS-Gt-lkf"; */
+"ryS-Gt-lkf.title" = "右";
+
+/* Class = "WKInterfaceLabel"; text = "量"; ObjectID = "sqO-3m-jmN"; */
+"sqO-3m-jmN.text" = "量";
+
+/* Class = "WKInterfaceButton"; title = "1"; ObjectID = "v3t-4R-FrN"; */
+"v3t-4R-FrN.title" = "1";
+
+/* Class = "WKInterfaceButton"; title = "3"; ObjectID = "vmJ-Qq-cyr"; */
+"vmJ-Qq-cyr.title" = "3";
+
+/* Class = "WKInterfaceButton"; title = "2"; ObjectID = "w8V-TV-QcI"; */
+"w8V-TV-QcI.title" = "2";
+
+/* Class = "WKInterfaceButton"; title = "6"; ObjectID = "wGz-GF-u4o"; */
+"wGz-GF-u4o.title" = "6";
+
+/* Class = "WKInterfaceTextField"; text = "FlowRate"; ObjectID = "xOS-PA-he8"; */
+"xOS-PA-he8.text" = "FlowRate";
+
+/* Class = "WKInterfaceLabel"; text = "-- mL/hr"; ObjectID = "yWd-LL-Sta"; */
+"yWd-LL-Sta.text" = "-- mL/hr";
+
+/* Class = "WKInterfaceLabel"; text = "点滴セット"; ObjectID = "zOB-G0-Ehs"; */
+"zOB-G0-Ehs.text" = "点滴セット";

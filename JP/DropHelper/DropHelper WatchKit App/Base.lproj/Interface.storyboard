@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
@@ -40,7 +41,7 @@
                             </connections>
                         </button>
                         <group width="1" height="0.10000000000000001" alignment="left" id="POe-p2-pBr"/>
-                        <button width="1" alignment="left" title="設定" id="VGC-jJ-j8b">
+                        <button width="1" alignment="left" title="Setting" id="VGC-jJ-j8b">
                             <connections>
                                 <segue destination="erd-Es-afb" kind="push" id="A1c-gY-3eO"/>
                             </connections>
@@ -62,15 +63,15 @@
             <objects>
                 <controller id="erd-Es-afb" customClass="SettingView" customModule="DropHelper_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="図の配置" id="2yT-Zy-PDQ"/>
+                        <label alignment="left" text="Figure position" id="2yT-Zy-PDQ"/>
                         <group width="1" alignment="left" id="LB4-EI-i5n">
                             <items>
-                                <button width="0.5" alignment="left" title="左" id="TIj-PW-lTa">
+                                <button width="0.5" alignment="left" title="Left" id="TIj-PW-lTa">
                                     <connections>
                                         <action selector="imageAlignmentLeftSET" destination="erd-Es-afb" id="vMs-8F-RID"/>
                                     </connections>
                                 </button>
-                                <button width="0.5" alignment="left" title="右" id="ryS-Gt-lkf">
+                                <button width="0.5" alignment="left" title="Right" id="ryS-Gt-lkf">
                                     <connections>
                                         <action selector="imageAlignmentRightSET" destination="erd-Es-afb" id="d6o-qY-cbb"/>
                                     </connections>
@@ -91,22 +92,22 @@
             <objects>
                 <controller id="xEn-zB-JsQ" customClass="InfusionSetWKInterfaceController" customModule="DropHelper_WatchKit_Extension">
                     <items>
-                        <button width="1" height="32" alignment="left" title="20 滴/mL" id="PF7-Tm-NWS">
+                        <button width="1" height="32" alignment="left" title="20 gtt/mL" id="PF7-Tm-NWS">
                             <connections>
                                 <action selector="infusionSet_20" destination="xEn-zB-JsQ" id="CxA-si-Jn4"/>
                             </connections>
                         </button>
-                        <button width="1" height="32" alignment="left" title="60 滴/mL" id="hYF-7h-qKX">
+                        <button width="1" height="32" alignment="left" title="60 gtt/mL" id="hYF-7h-qKX">
                             <connections>
                                 <action selector="infusionSet_60" destination="xEn-zB-JsQ" id="ILo-hd-QnL"/>
                             </connections>
                         </button>
-                        <button width="1" height="32" alignment="left" title="15 滴/mL" id="1oQ-hx-MSl">
+                        <button width="1" height="32" alignment="left" title="15 gtt/mL" id="1oQ-hx-MSl">
                             <connections>
                                 <action selector="infusionSet_15" destination="xEn-zB-JsQ" id="xps-4i-ltb"/>
                             </connections>
                         </button>
-                        <button width="1" height="32" alignment="left" title="10 滴/mL" id="BSy-9k-tQu">
+                        <button width="1" height="32" alignment="left" title="10 gtt/mL" id="BSy-9k-tQu">
                             <connections>
                                 <action selector="infusionSet_10" destination="xEn-zB-JsQ" id="0W1-hT-S5k"/>
                             </connections>

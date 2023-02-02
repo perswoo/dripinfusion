@@ -31,7 +31,7 @@ class SettingView: WKInterfaceController {
         }
         
         
-        self.setTitle(TITLE_W_SETTING)
+        self.setTitle(NSLocalizedString("WatchOS_Setting", comment: ""))
         
     }
     

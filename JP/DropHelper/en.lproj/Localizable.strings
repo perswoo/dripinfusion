@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  DropHelper
+
+  Created by おいちいたまご on 2022-03-24.
+  
+*/
+
+
+"Unit_InfusionSet" =" gtt/㎖";
+
+/* IOS Main画面 */
+"Drip_Unit_Hour"=" hr ";
+"Drip_Unit_Min"=" min";
+"Drip_History"="History";
+"Drip_EditStart"="Edit";
+"Drip_EditDone"="Done";
+
+/* IOS 設定画面*/
+"SettingTitle_Drip" = "Drip";
+"SettingTitle_OtherSets" = "Other sets";
+"SettingTitle_DripSound" = "Drip sound";
+"SettingTitle_DripVibration" = "Drip Vibration";
+"SettingTitle_ShakeReset" = "Shake Reset";
+"SettingTitle_SyncWithWatchApp" = "Sync With WatchApp (Only IOS)";
+"SettingTitle_EnableEditingRate" = "Enable Editing Rate";
+"SettingTitle_INFO" = "INFO";
+"SettingTitle_Review" = "Review";
+"SettingTitle_Contact" = "Contact";
+"SettingTitle_RecommendFriends" = "Recommend Friends";
+"SettingTitle_AppVersion" = "App Version";
+"SettingTitle_AboutThisApp" = "About This App";
+"SettingText_Mail" = "Mail";
+
+/* Watch OS */
+"WatchOS_Setting"="Setting";
