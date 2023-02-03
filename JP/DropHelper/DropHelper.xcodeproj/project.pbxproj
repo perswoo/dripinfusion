@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C319353B26957425004E4B91 /* WaterDropCLIP_20210704.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C319353A269573F2004E4B91 /* WaterDropCLIP_20210704.mp3 */; };
+		C352E3E729860F63004AE9D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C352E3E629860F63004AE9D0 /* GoogleService-Info.plist */; };
+		C352E3EA29861056004AE9D0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C352E3E929861056004AE9D0 /* FirebaseAnalytics */; };
+		C352E3EC29861056004AE9D0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = C352E3EB29861056004AE9D0 /* FirebaseAnalyticsOnDeviceConversion */; };
+		C352E3EE29861056004AE9D0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C352E3ED29861056004AE9D0 /* FirebaseAnalyticsSwift */; };
+		C352E3F029861056004AE9D0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = C352E3EF29861056004AE9D0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		C352E3F229861056004AE9D0 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = C352E3F129861056004AE9D0 /* FirebaseAppCheck */; };
+		C352E3F429861056004AE9D0 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C352E3F329861056004AE9D0 /* FirebaseAppDistribution-Beta */; };
 		C35FD95A26994A6800EEECF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C713202693685F0007BB26 /* LaunchScreen.storyboard */; };
 		C35FD95F269AD4A200EEECF0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FD95E269AD4A200EEECF0 /* SettingView.swift */; };
 		C3C713162693685D0007BB26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C713152693685D0007BB26 /* AppDelegate.swift */; };
@@ -18,7 +25,6 @@
 		C3C713272693685F0007BB26 /* DropHelper WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C3C713262693685F0007BB26 /* DropHelper WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3C7132D2693685F0007BB26 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C7132B2693685F0007BB26 /* Interface.storyboard */; };
 		C3C7132F2693685F0007BB26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C7132E2693685F0007BB26 /* Assets.xcassets */; };
-		C3C713362693685F0007BB26 /* DropHelper WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3C713352693685F0007BB26 /* DropHelper WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3C7133B2693685F0007BB26 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C7133A2693685F0007BB26 /* InterfaceController.swift */; };
 		C3C7133D2693685F0007BB26 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C7133C2693685F0007BB26 /* ExtensionDelegate.swift */; };
 		C3C7133F2693685F0007BB26 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C7133E2693685F0007BB26 /* ComplicationController.swift */; };
@@ -45,12 +51,9 @@
 		C3C713C426948F5A0007BB26 /* MainDropTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C713B426948E9F0007BB26 /* MainDropTableViewCell.xib */; };
 		C3C713C526948F5F0007BB26 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C713AD26948E9F0007BB26 /* MainTableViewCell.xib */; };
 		C3F0F04527ECE91800A3664D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F0F04927ECE91800A3664D /* Localizable.strings */; };
-		C3F0F04627ECE91800A3664D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F0F04927ECE91800A3664D /* Localizable.strings */; };
 		C3F0F04727ECE91800A3664D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F0F04927ECE91800A3664D /* Localizable.strings */; };
 		C3F5297627EA7EC1009BC032 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5296F27EA7EC0009BC032 /* nanopb.xcframework */; };
-		C3F5297727EA7EC1009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297027EA7EC0009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
 		C3F5297827EA7EC1009BC032 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297127EA7EC0009BC032 /* GoogleMobileAds.xcframework */; };
-		C3F5297927EA7EC1009BC032 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297227EA7EC0009BC032 /* GoogleAppMeasurement.xcframework */; };
 		C3F5297A27EA7EC1009BC032 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297327EA7EC0009BC032 /* PromisesObjC.xcframework */; };
 		C3F5297B27EA7EC1009BC032 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297427EA7EC0009BC032 /* GoogleUtilities.xcframework */; };
 		C3F5297C27EA7EC1009BC032 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F5297527EA7EC0009BC032 /* UserMessagingPlatform.xcframework */; };
@@ -64,27 +67,9 @@
 			remoteGlobalIDString = C3C713252693685F0007BB26;
 			remoteInfo = "DropHelper WatchKit App";
 		};
-		C3C713372693685F0007BB26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3C7130A2693685D0007BB26 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3C713342693685F0007BB26;
-			remoteInfo = "DropHelper WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C3C713482693685F0007BB26 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				C3C713362693685F0007BB26 /* DropHelper WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3C7134C2693685F0007BB26 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		C319353A269573F2004E4B91 /* WaterDropCLIP_20210704.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WaterDropCLIP_20210704.mp3; sourceTree = "<group>"; };
+		C352E3E629860F63004AE9D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C35FD95E269AD4A200EEECF0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C3C713122693685D0007BB26 /* DropHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C713152693685D0007BB26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +99,6 @@
 		C3C7132C2693685F0007BB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		C3C7132E2693685F0007BB26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3C713302693685F0007BB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3C713352693685F0007BB26 /* DropHelper WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DropHelper WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C7133A2693685F0007BB26 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		C3C7133C2693685F0007BB26 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		C3C7133E2693685F0007BB26 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -160,9 +145,13 @@
 			files = (
 				C3F5297627EA7EC1009BC032 /* nanopb.xcframework in Frameworks */,
 				C3F5297C27EA7EC1009BC032 /* UserMessagingPlatform.xcframework in Frameworks */,
+				C352E3EA29861056004AE9D0 /* FirebaseAnalytics in Frameworks */,
+				C352E3F429861056004AE9D0 /* FirebaseAppDistribution-Beta in Frameworks */,
 				C3F5297827EA7EC1009BC032 /* GoogleMobileAds.xcframework in Frameworks */,
-				C3F5297927EA7EC1009BC032 /* GoogleAppMeasurement.xcframework in Frameworks */,
-				C3F5297727EA7EC1009BC032 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				C352E3F229861056004AE9D0 /* FirebaseAppCheck in Frameworks */,
+				C352E3F029861056004AE9D0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				C352E3EE29861056004AE9D0 /* FirebaseAnalyticsSwift in Frameworks */,
+				C352E3EC29861056004AE9D0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				C3F5297A27EA7EC1009BC032 /* PromisesObjC.xcframework in Frameworks */,
 				C3F5297B27EA7EC1009BC032 /* GoogleUtilities.xcframework in Frameworks */,
 			);
@@ -195,7 +184,6 @@
 			children = (
 				C3C713122693685D0007BB26 /* DropHelper.app */,
 				C3C713262693685F0007BB26 /* DropHelper WatchKit App.app */,
-				C3C713352693685F0007BB26 /* DropHelper WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +191,7 @@
 		C3C713142693685D0007BB26 /* DropHelper */ = {
 			isa = PBXGroup;
 			children = (
+				C352E3E629860F63004AE9D0 /* GoogleService-Info.plist */,
 				C3C713152693685D0007BB26 /* AppDelegate.swift */,
 				C3C713172693685D0007BB26 /* SceneDelegate.swift */,
 				C3C713B026948E9F0007BB26 /* _MainDropData.swift */,
@@ -290,6 +279,14 @@
 				C3C713292693685F0007BB26 /* PBXTargetDependency */,
 			);
 			name = DropHelper;
+			packageProductDependencies = (
+				C352E3E929861056004AE9D0 /* FirebaseAnalytics */,
+				C352E3EB29861056004AE9D0 /* FirebaseAnalyticsOnDeviceConversion */,
+				C352E3ED29861056004AE9D0 /* FirebaseAnalyticsSwift */,
+				C352E3EF29861056004AE9D0 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				C352E3F129861056004AE9D0 /* FirebaseAppCheck */,
+				C352E3F329861056004AE9D0 /* FirebaseAppDistribution-Beta */,
+			);
 			productName = DropHelper;
 			productReference = C3C713122693685D0007BB26 /* DropHelper.app */;
 			productType = "com.apple.product-type.application";
@@ -299,34 +296,17 @@
 			buildConfigurationList = C3C713492693685F0007BB26 /* Build configuration list for PBXNativeTarget "DropHelper WatchKit App" */;
 			buildPhases = (
 				C3C713242693685F0007BB26 /* Resources */,
-				C3C713482693685F0007BB26 /* Embed App Extensions */,
+				C3C713312693685F0007BB26 /* Sources */,
+				C3C713322693685F0007BB26 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C3C713382693685F0007BB26 /* PBXTargetDependency */,
 			);
 			name = "DropHelper WatchKit App";
 			productName = "DropHelper WatchKit App";
 			productReference = C3C713262693685F0007BB26 /* DropHelper WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		C3C713342693685F0007BB26 /* DropHelper WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3C713452693685F0007BB26 /* Build configuration list for PBXNativeTarget "DropHelper WatchKit Extension" */;
-			buildPhases = (
-				C3C713312693685F0007BB26 /* Sources */,
-				C3C713322693685F0007BB26 /* Frameworks */,
-				C3C713332693685F0007BB26 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "DropHelper WatchKit Extension";
-			productName = "DropHelper WatchKit Extension";
-			productReference = C3C713352693685F0007BB26 /* DropHelper WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -335,7 +315,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					C3C713112693685D0007BB26 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -343,9 +323,6 @@
 					C3C713252693685F0007BB26 = {
 						CreatedOnToolsVersion = 12.5.1;
 						LastSwiftMigration = 1250;
-					};
-					C3C713342693685F0007BB26 = {
-						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -359,13 +336,15 @@
 				ja,
 			);
 			mainGroup = C3C713092693685D0007BB26;
+			packageReferences = (
+				C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C3C713132693685D0007BB26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C3C713112693685D0007BB26 /* DropHelper */,
 				C3C713252693685F0007BB26 /* DropHelper WatchKit App */,
-				C3C713342693685F0007BB26 /* DropHelper WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -376,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35FD95A26994A6800EEECF0 /* LaunchScreen.storyboard in Resources */,
+				C352E3E729860F63004AE9D0 /* GoogleService-Info.plist in Resources */,
 				C3C7131F2693685F0007BB26 /* Assets.xcassets in Resources */,
 				C3C7131D2693685D0007BB26 /* Main.storyboard in Resources */,
 				C3F0F04527ECE91800A3664D /* Localizable.strings in Resources */,
@@ -389,18 +369,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C7132F2693685F0007BB26 /* Assets.xcassets in Resources */,
-				C3F0F04627ECE91800A3664D /* Localizable.strings in Resources */,
-				C3C7132D2693685F0007BB26 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3C713332693685F0007BB26 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3C713412693685F0007BB26 /* Assets.xcassets in Resources */,
 				C3F0F04727ECE91800A3664D /* Localizable.strings in Resources */,
+				C3C7132F2693685F0007BB26 /* Assets.xcassets in Resources */,
+				C3C713412693685F0007BB26 /* Assets.xcassets in Resources */,
+				C3C7132D2693685F0007BB26 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,11 +426,6 @@
 			isa = PBXTargetDependency;
 			target = C3C713252693685F0007BB26 /* DropHelper WatchKit App */;
 			targetProxy = C3C713282693685F0007BB26 /* PBXContainerItemProxy */;
-		};
-		C3C713382693685F0007BB26 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3C713342693685F0007BB26 /* DropHelper WatchKit Extension */;
-			targetProxy = C3C713372693685F0007BB26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,6 +504,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -597,6 +565,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -615,71 +584,21 @@
 			};
 			name = Release;
 		};
-		C3C713462693685F0007BB26 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = WH2ZAX783Q;
-				INFOPLIST_FILE = "DropHelper WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
-			};
-			name = Debug;
-		};
-		C3C713472693685F0007BB26 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2;
-				DEVELOPMENT_TEAM = WH2ZAX783Q;
-				INFOPLIST_FILE = "DropHelper WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.null405.DropHelper.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 7.4;
-			};
-			name = Release;
-		};
 		C3C7134A2693685F0007BB26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
-				IBSC_MODULE = DropHelper_WatchKit_Extension;
 				INFOPLIST_FILE = "DropHelper WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
 				NEW_SETTING = "";
@@ -699,17 +618,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = WH2ZAX783Q;
-				IBSC_MODULE = DropHelper_WatchKit_Extension;
 				INFOPLIST_FILE = "DropHelper WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
 				NEW_SETTING = "";
@@ -783,15 +701,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3C713452693685F0007BB26 /* Build configuration list for PBXNativeTarget "DropHelper WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3C713462693685F0007BB26 /* Debug */,
-				C3C713472693685F0007BB26 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C3C713492693685F0007BB26 /* Build configuration list for PBXNativeTarget "DropHelper WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -811,6 +720,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C352E3E929861056004AE9D0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C352E3EB29861056004AE9D0 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		C352E3ED29861056004AE9D0 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		C352E3EF29861056004AE9D0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		C352E3F129861056004AE9D0 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		C352E3F329861056004AE9D0 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C352E3E829861056004AE9D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3C7130A2693685D0007BB26 /* Project object */;
 }

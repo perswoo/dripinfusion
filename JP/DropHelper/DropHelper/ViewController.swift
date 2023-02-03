@@ -88,7 +88,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             userDefaults.set("App Store", forKey: KEY_REVIEW)
             userDefaults.set(NSLocalizedString("SettingText_Mail", comment: ""), forKey: KEY_CONTACT)
             userDefaults.set("", forKey: KEY_RECOMMEND)
-            let AppVersion = ((Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!) + " (22)"
+            let AppVersion = ((Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String)!) + " (23)"
             userDefaults.set(AppVersion, forKey: KEY_APP_VERSION)
             userDefaults.set("", forKey: KEY_MY_APP)
             
@@ -150,9 +150,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"  //Test Ad
+        //bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"  //Test Ad ca-app-pub-3940256099942544~2934735716
         //bannerView.adUnitID = "ca-app-pub-8058786761550310/6004614497"   //本番 Ad 1st
-        bannerView.adUnitID = "ca-app-pub-8058786761550310/8432834265"   //本番 Ad 2nd
+        //bannerView.adUnitID = "ca-app-pub-8058786761550310/8432834265"   //本番 Ad 2nd バグで適用できなかった
+        bannerView.adUnitID = "2ndca-app-pub-4463164875008049/9727712988"   //本番 Ad 3rd 新規アカウント(xemwoo@) ca-app-pub-4463164875008049~1645208839
         
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
